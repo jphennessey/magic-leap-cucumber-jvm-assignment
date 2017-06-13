@@ -13,9 +13,8 @@ import pageobjects.PageMessages;
 public class Steps {
     public WebDriver driver;
 
-    public Steps()
-    {
-    	driver = Hooks.driver;
+    public Steps() {
+        driver = Hooks.driver;
     }
 
     @Given("^I load the (home|contact) page$")
@@ -25,6 +24,7 @@ public class Steps {
     }
 
     private String actualStreetAddress = null;
+
     @When("^I inspect the address$")
     public void i_inspect_the_address() throws Throwable {
         ContactPage contactPage = new ContactPage(driver);
@@ -60,10 +60,9 @@ public class Steps {
 
     @Then("^I get a confirmation$")
     public void i_get_a_confirmation() throws Throwable {
-//        String actual = driver.findElement(By.cssSelector("#thankyou h1")).getText();
         String actual = new PageMessages(driver).getThankYouMessage();
         String expected = "thanksforreachingout...";
         Assert.assertEquals(actual, expected, "Contact Form submission did not produce the message \"" + expected + "\"");
     }
-    
+
 }
