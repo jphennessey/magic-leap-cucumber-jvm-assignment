@@ -41,3 +41,5 @@ jphennessey,  13 June 2017
 - mvn test 
 - open output/report.html
 
+### Sample report
+![Extent report missing](../master/images/extent_report.png)
