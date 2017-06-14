@@ -30,11 +30,13 @@ jphennessey,  13 June 2017
 - [x] included results in an HTML report
  
 
-### Running the Tests:
+### Running the Tests (based on Mac OS):
 ##### Prerequisites
 - [maven](http://maven.apache.org/) 
 - [git](https://git-scm.com/downloads)
 - [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+- [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+   - NOTE: place chromedriver or a symbolic link in a directory listed on your $PATH environment variable
 ##### Steps 
 - git clone https://github.com/jphennessey/magic-leap-cucumber-jvm-assignment.git
 - mvn clean compile
