@@ -32,11 +32,13 @@ jphennessey,  13 June 2017
 
 ### Running the Tests (based on Mac OS):
 ##### Prerequisites
-- [maven](http://maven.apache.org/) 
-- [git](https://git-scm.com/downloads)
 - [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+- [maven](http://maven.apache.org/)
+   - available via "brew install maven"
+- [git](https://git-scm.com/downloads)
+   - available via "brew install git"
 - [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
-   - NOTE: place chromedriver or a symbolic link in a directory listed on your $PATH environment variable
+   - NOTE: use "brew install chromedriver" or ensure it is accessible on $PATH 
 ##### Steps 
 - git clone https://github.com/jphennessey/magic-leap-cucumber-jvm-assignment.git
 - mvn clean compile
